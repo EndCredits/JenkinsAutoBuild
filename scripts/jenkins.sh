@@ -1,10 +1,13 @@
 #!/bin/bash 
+# Reference: https://www.cnblogs.com/h--d/p/9998788.html
 
 # Add this file to /etc/rc.d/rc.local
 
 # Add jenkins jar directory 
 export JENKINS_DIR=$HOME/jenkins
- 
+# Set http port
+HTTP_PORT=8080 
+
 # Switch to Jenkins directory
 cd $JENKINS_DIR
 
@@ -15,7 +18,7 @@ pid=`ps -ef | grep jenkins.war | grep -v 'grep'| awk '{print $2}'`
    echo 'jenkins is running...'
  else
 # Run Web
-   nohup java -jar $JENKINS_HOME/jenkins.war --httpPort=80 >/dev/null &
+   nohup java -jar $JENKINS_HOME/jenkins.war --httpPort=$HTTP_PORT >/dev/null &
    fi
    elif [ "$1" = "stop" ];then
    exec ps -ef | grep jenkins | grep -v grep | awk '{print $2}'| xargs kill -9
