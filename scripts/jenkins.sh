@@ -6,7 +6,7 @@
 # Add jenkins jar directory 
 export JENKINS_DIR=/var/jk-scripts/JenkinsAutoBuild
 # Set http port
-HTTP_PORT=8080 
+export HTTP_PORT=8080 
 
 # Switch to Jenkins directory
 cd $JENKINS_DIR

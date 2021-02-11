@@ -23,7 +23,7 @@ echo "Configuring Jenkins runtime environment....................."
 echo "############################################################"
 
 bash scripts/jenkins.sh start
-sudo echo 'bash /var/jk-scrpits/JenkinsAutobuild/scrpits/jenkins.sh' >> /etc/rc.d/rc.local
+sudo echo '/var/jk-scrpits/JenkinsAutobuild/scrpits/jenkins.sh start' >> /etc/rc.d/rc.local
 
 echo "############################################################"
 echo "Completed..................................................."
