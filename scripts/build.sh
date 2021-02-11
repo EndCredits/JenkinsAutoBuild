@@ -1,8 +1,8 @@
 #!/bin/bash
 
 export IANDROID_SRC_PATH=/root/android
-export ISYNC_FLAGS='-j$(nproc --all) -c --force-sync --no-clone-bundle --no-tags'
-export ICUSTOM_ROM_PREFIX=aosp
+export ISYNC_FLAGS='-j8 -c --force-sync --no-clone-bundle --no-tags'
+export ICUSTOM_ROM_PREFIX=dot
 export IBUILD_DEVICE=tiffany
 export IBUILD_TYPE=userdebug
 export ILUNCH=$ICUSTOM_ROM_PREFIX"_"$IBUILD_DEVICE"-"$IBUILD_TYPE
