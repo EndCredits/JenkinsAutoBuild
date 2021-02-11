@@ -4,7 +4,7 @@
 # Add this file to /etc/rc.d/rc.local
 
 # Add jenkins jar directory 
-export JENKINS_DIR=/var/jk-scrpits/JenkinsAutobuild
+export JENKINS_DIR=/var/jk-scripts/JenkinsAutoBuild
 # Set http port
 HTTP_PORT=8080 
 
