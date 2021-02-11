@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # initial jenkins
 
@@ -24,6 +24,12 @@ echo "############################################################"
 
 bash scripts/jenkins.sh start
 sudo echo '/var/jk-scrpits/JenkinsAutobuild/scrpits/jenkins.sh start' >> /etc/rc.d/rc.local
+
+echo "############################################################"
+echo "Configuring repo tool......................................."
+echo "############################################################"
+
+bash scripts/repo.sh
 
 echo "############################################################"
 echo "Completed..................................................."
