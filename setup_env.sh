@@ -7,9 +7,11 @@ echo "Initializing AOSP/Custom ROM build environment for CentOS..."
 echo "############################################################"
 
 sudo yum groupinstall "Development Tools"
-sudo yum install -y gcc make libstdc++ libstdc++-devel zlib-devel openssl-devel perl cpio expat-devel gettext-devel autoconf glibc glibc-devel zlib-devel libstdc++ libX11-devel ncurses-devel ncurses-libs gperf flex gcc-c++ bison patch ncurses 
+sudo yum install -y gcc make libstdc++ libstdc++-devel zlib-devel openssl-devel perl cpio expat-devel gettext-devel autoconf glibc glibc-devel zlib-devel libstdc++ libX11-devel ncurses-devel ncurses-libs gperf flex gcc-c++ bison patch ncurses ccache
 sudo yum install -y python3 python2
 sudo yum install -y wget curl
+ccache -M 50G
+echo "ccache size is 50.0G , if you want to change it , plz run 'ccache -M <size>' to set it"
 
 echo "############################################################"
 echo "Initializing Jenkins runtime environment...................."
