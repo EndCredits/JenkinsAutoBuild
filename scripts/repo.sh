@@ -4,7 +4,7 @@ export IREPO_PATH=/var/jk-scripts/repo
 export RC_PATH=$HOME
 export RC_NAME=.bashrc
 
-mkdir -p $IREPO_PAYH
+mkdir -p $IREPO_PATH
 
 curl https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -o $IREPO_PATH/repo
 

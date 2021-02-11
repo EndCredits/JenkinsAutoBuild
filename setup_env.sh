@@ -33,4 +33,9 @@ bash scripts/repo.sh
 
 echo "############################################################"
 echo "Completed..................................................."
+echo "To access your Jenkins service, please use		  "
+echo "http://<your IP address>:<Jenkins port (default is 8080)>   "
+echo "Then you can configure your Jenkins Tools."
+echo "Your administrator password is :" 
+cat /root/.jenkins/secrets/initialAdminPassword
 echo "############################################################"
