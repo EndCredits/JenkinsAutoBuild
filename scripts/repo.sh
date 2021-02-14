@@ -12,3 +12,4 @@ chmod a+x $IREPO_PATH/repo
 
 echo "# Add repo tool to PATH" >> $RC_PATH/$RC_NAME
 echo "PATH="$IREPO_PATH:$PATH"" >> $RC_PATH/$RC_NAME
+source $RC_PATH/$RC_NAME
