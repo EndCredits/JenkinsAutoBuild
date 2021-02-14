@@ -25,7 +25,7 @@ echo "Configuring Jenkins runtime environment....................."
 echo "############################################################"
 
 bash scripts/jenkins.sh start
-sudo echo '/var/jk-scrpits/JenkinsAutobuild/scrpits/jenkins.sh start' >> /etc/rc.d/rc.local
+sudo echo '$HOME/jk-scrpits/JenkinsAutobuild/scrpits/jenkins.sh start' >> /etc/rc.d/rc.local
 
 echo "############################################################"
 echo "Configuring repo tool......................................."
@@ -39,5 +39,5 @@ echo "To access your Jenkins service, please use		  "
 echo "http://<your IP address>:<Jenkins port (default is 8080)>   "
 echo "Then you can configure your Jenkins Tools."
 echo "Your administrator password is :" 
-cat /root/.jenkins/secrets/initialAdminPassword
+cat $HOME/.jenkins/secrets/initialAdminPassword
 echo "############################################################"

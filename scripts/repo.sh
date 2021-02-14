@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export IREPO_PATH=/var/jk-scripts/repo
+export IREPO_PATH=$HOME/jk-scripts/repo
 export RC_PATH=$HOME
 export RC_NAME=.bashrc
 
