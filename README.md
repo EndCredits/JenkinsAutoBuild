@@ -6,8 +6,8 @@
 太简单了 || Only need a hand.
 
 ```
-git clone https://github.com/EndCredits/JenkinsAutoBuild.git -b main /var/jk-scripts/JenkinsAutoBuild
-cd /var/jk-scripts/JenkinsAutoBuild/
+git clone https://github.com/EndCredits/JenkinsAutoBuild.git -b main $HOME/jk-scripts/JenkinsAutoBuild
+cd $HOME/jk-scripts/JenkinsAutoBuild/
 ```
 
 然后 || And then
