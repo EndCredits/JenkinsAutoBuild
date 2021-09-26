@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export PATH="$HOME/git/git-2.30.1:$PATH"
 export IANDROID_SRC_PATH=$HOME//android
 export ISYNC_FLAGS='-j8 -c --force-sync --no-clone-bundle --no-tags'
 export ICUSTOM_ROM_PREFIX=aosp
