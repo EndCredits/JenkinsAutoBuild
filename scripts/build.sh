@@ -6,7 +6,7 @@ export ICUSTOM_ROM_PREFIX=aosp
 export IBUILD_DEVICE=tiffany
 export IBUILD_TYPE=userdebug
 export ILUNCH=$ICUSTOM_ROM_PREFIX"_"$IBUILD_DEVICE"-"$IBUILD_TYPE
-export IBUILD_THREAD=4
+export IBUILD_THREAD=40
 
 cd $IANDROID_SRC_PATH
 source build/envsetup.sh
